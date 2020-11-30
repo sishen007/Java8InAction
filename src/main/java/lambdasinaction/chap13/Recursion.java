@@ -2,7 +2,16 @@ package lambdasinaction.chap13;
 
 import java.util.stream.LongStream;
 
-
+/**
+ * 13.3 递归和迭代
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/30 16:25 
+ */
 public class Recursion {
 
     public static void main(String[] args) {

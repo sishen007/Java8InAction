@@ -1,6 +1,10 @@
 package lambdasinaction.chap4;
 import java.util.*;
 
+/**
+ * @author wangyh2
+ * @since  2020/11/17 11:21 
+ */
 public class Dish {
 
     private final String name;

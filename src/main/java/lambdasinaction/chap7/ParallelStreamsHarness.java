@@ -1,7 +1,12 @@
 package lambdasinaction.chap7;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.*;
 import java.util.function.*;
+
+import static java.lang.String.valueOf;
+import static java.util.stream.Collectors.joining;
 
 public class ParallelStreamsHarness {
 
@@ -13,9 +18,9 @@ public class ParallelStreamsHarness {
         System.out.println("Parallel forkJoinSum done in: " + measurePerf(ParallelStreams::parallelSum, 10_000_000L) + " msecs" );
         System.out.println("Range forkJoinSum done in: " + measurePerf(ParallelStreams::rangedSum, 10_000_000L) + " msecs");
         System.out.println("Parallel range forkJoinSum done in: " + measurePerf(ParallelStreams::parallelRangedSum, 10_000_000L) + " msecs" );
-        System.out.println("ForkJoin sum done in: " + measurePerf(ForkJoinSumCalculator::forkJoinSum, 10_000_000L) + " msecs" );
-        System.out.println("SideEffect sum done in: " + measurePerf(ParallelStreams::sideEffectSum, 10_000_000L) + " msecs" );
-        System.out.println("SideEffect prallel sum done in: " + measurePerf(ParallelStreams::sideEffectParallelSum, 10_000_000L) + " msecs" );
+//        System.out.println("ForkJoin sum done in: " + measurePerf(ForkJoinSumCalculator::forkJoinSum, 10_000_000L) + " msecs" );
+//        System.out.println("SideEffect sum done in: " + measurePerf(ParallelStreams::sideEffectSum, 10_000_000L) + " msecs" );
+//        System.out.println("SideEffect prallel sum done in: " + measurePerf(ParallelStreams::sideEffectParallelSum, 10_000_000L) + " msecs" );
     }
 
     public static <T, R> long measurePerf(Function<T, R> f, T input) {
@@ -25,7 +30,7 @@ public class ParallelStreamsHarness {
             R result = f.apply(input);
             long duration = (System.nanoTime() - start) / 1_000_000;
             System.out.println("Result: " + result);
-            if (duration < fastest) fastest = duration;
+            if (duration < fastest) {fastest = duration;}
         }
         return fastest;
     }

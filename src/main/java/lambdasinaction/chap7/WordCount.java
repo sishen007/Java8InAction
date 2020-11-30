@@ -4,6 +4,16 @@ import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 
+/**
+ * 7.3 Spliterator 分割器
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/23 18:11 
+ */
 public class WordCount {
 
     public static final String SENTENCE =
@@ -12,7 +22,7 @@ public class WordCount {
             " che la  dritta via era   smarrita ";
 
     public static void main(String[] args) {
-        System.out.println("Found " + countWordsIteratively(SENTENCE) + " words");
+//        System.out.println("Found " + countWordsIteratively(SENTENCE) + " words");
         System.out.println("Found " + countWords(SENTENCE) + " words");
     }
 
@@ -23,7 +33,7 @@ public class WordCount {
             if (Character.isWhitespace(c)) {
                 lastSpace = true;
             } else {
-                if (lastSpace) counter++;
+                if (lastSpace) {counter++;}
                 lastSpace = Character.isWhitespace(c);
             }
         }
@@ -31,8 +41,8 @@ public class WordCount {
     }
 
     public static int countWords(String s) {
-        //Stream<Character> stream = IntStream.range(0, s.length())
-        //                                    .mapToObj(SENTENCE::charAt).parallel();
+//        Stream<Character> stream = IntStream.range(0, s.length())
+//                                            .mapToObj(SENTENCE::charAt).parallel();
         Spliterator<Character> spliterator = new WordCounterSpliterator(s);
         Stream<Character> stream = StreamSupport.stream(spliterator, true);
 

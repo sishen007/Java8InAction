@@ -7,6 +7,16 @@ import java.util.*;
 import static java.util.Optional.*;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * 10.4.3 把所有内容整合起来
+ *
+ * @param null
+ * @return
+ * @throw
+ *
+ * @author wangyh2
+ * @since  2020/11/25 18:05
+ */
 public class ReadPositiveIntParam {
 
     @Test

@@ -17,6 +17,16 @@ import java.util.stream.Stream;
 import lambdasinaction.chap11.ExchangeService;
 import lambdasinaction.chap11.ExchangeService.Money;
 
+/**
+ * 11.3 异步查询
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/27 9:30 
+ */
 public class BestPriceFinder {
 
     private final List<Shop> shops = Arrays.asList(new Shop("BestPrice"),

@@ -3,8 +3,19 @@ package lambdasinaction.chap6;
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collector;
+
 import static java.util.stream.Collector.Characteristics.*;
 
+/**
+ * 6.5.2 收集器接口
+ *
+ * @param null
+ * @return
+ * @throw
+ *
+ * @author wangyh2
+ * @since  2020/11/20 9:09
+ */
 public class ToListCollector<T> implements Collector<T, List<T>, List<T>> {
 
     @Override

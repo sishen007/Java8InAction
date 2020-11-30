@@ -3,6 +3,16 @@ package lambdasinaction.chap6;
 import static java.util.stream.Collectors.*;
 import static lambdasinaction.chap6.Dish.menu;
 
+/**
+ *  6.2 规约和汇总
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/19 17:12 
+ */
 public class Reducing {
 
     public static void main(String ... args) {

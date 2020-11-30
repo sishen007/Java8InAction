@@ -54,7 +54,7 @@ public class FilteringApples{
     }
 
     public static boolean isGreenApple(Apple apple) {
-        return "green".equals(apple.getColor()); 
+        return "green".equals(apple.getColor());
     }
 
     public static boolean isHeavyApple(Apple apple) {
@@ -96,6 +96,7 @@ public class FilteringApples{
             this.color = color;
         }
 
+        @Override
         public String toString() {
             return "Apple{" +
                    "color='" + color + '\'' +

@@ -4,7 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-
+/**
+ * 8.2.4 工厂模式
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/24 14:16 
+ */
 public class FactoryMain {
 
     public static void main(String[] args) {

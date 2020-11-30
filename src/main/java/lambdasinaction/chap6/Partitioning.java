@@ -6,12 +6,22 @@ import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
 import static lambdasinaction.chap6.Dish.menu;
 
+/**
+ * 6.4分区
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/19 18:55 
+ */
 public class Partitioning {
 
     public static void main(String ... args) {
-        System.out.println("Dishes partitioned by vegetarian: " + partitionByVegeterian());
+//        System.out.println("Dishes partitioned by vegetarian: " + partitionByVegeterian());
         System.out.println("Vegetarian Dishes by type: " + vegetarianDishesByType());
-        System.out.println("Most caloric dishes by vegetarian: " + mostCaloricPartitionedByVegetarian());
+//        System.out.println("Most caloric dishes by vegetarian: " + mostCaloricPartitionedByVegetarian());
     }
 
     private static Map<Boolean, List<Dish>> partitionByVegeterian() {

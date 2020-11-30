@@ -9,4 +9,9 @@ public class Person {
     public Optional<Car> getCar() {
         return car;
     }
+
+    private Integer age;
+    public Integer getAge(){
+        return this.age;
+    }
 }

@@ -1,10 +1,20 @@
 package lambdasinaction.chap9;
 
+/**
+ * 9.4.2 选择提供了最具体实现的默认方法的接口
+ *
+ * @param null
+ * @return
+ * @throw
+ *
+ * @author wangyh2
+ * @since  2020/11/25 13:28
+ */
 public class MostSpecific{
 
     public static void main(String... args) {
-        new C().hello();
-        new E().hello();
+//        new C().hello();
+//        new E().hello();
         new G().hello();
     }
 
@@ -15,6 +25,7 @@ public class MostSpecific{
     }
 
     static interface B extends A{
+        @Override
         public default void hello() {
             System.out.println("Hello from B");
         }
@@ -27,6 +38,7 @@ public class MostSpecific{
     static class E extends D implements B, A{}
 
     static class F implements B, A {
+        @Override
         public void hello() {
             System.out.println("Hello from F");
         }

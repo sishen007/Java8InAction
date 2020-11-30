@@ -1,5 +1,15 @@
 package lambdasinaction.chap9;
 
+/**
+ * 9.4 菱形继承问题
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/25 13:16 
+ */
 public class Diamond{
 
     public static void main(String...args){

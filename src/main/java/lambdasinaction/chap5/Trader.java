@@ -1,4 +1,14 @@
 package lambdasinaction.chap5;
+/**
+ * 5.5.1 交易员
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/17 16:14 
+ */
 public  class Trader{
 	
 	private String name;
@@ -21,6 +31,7 @@ public  class Trader{
 		this.city = newCity;
 	}
 
+	@Override
 	public String toString(){
 		return "Trader:"+this.name + " in " + this.city;
 	}

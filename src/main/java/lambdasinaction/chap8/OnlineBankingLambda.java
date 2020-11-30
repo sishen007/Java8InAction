@@ -2,7 +2,16 @@ package lambdasinaction.chap8;
 
 import java.util.function.Consumer;
 
-
+/**
+ * 8.2.1 模板方法
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/24 13:22 
+ */
 public class OnlineBankingLambda {
 
     public static void main(String[] args) {

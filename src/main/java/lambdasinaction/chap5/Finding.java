@@ -6,6 +6,16 @@ import java.util.*;
 
 import static lambdasinaction.chap4.Dish.menu;
 
+/**
+ * 5.3 查找和匹配
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/17 14:30 
+ */
 public class Finding{
 
     public static void main(String...args){
@@ -13,9 +23,9 @@ public class Finding{
             System.out.println("Vegetarian friendly");
         }
 
-        System.out.println(isHealthyMenu());
-        System.out.println(isHealthyMenu2());
-        
+//        System.out.println(isHealthyMenu());
+//        System.out.println(isHealthyMenu2());
+//
         Optional<Dish> dish = findVegetarianDish();
         dish.ifPresent(d -> System.out.println(d.getName()));
     }

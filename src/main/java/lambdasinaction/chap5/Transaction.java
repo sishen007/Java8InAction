@@ -1,5 +1,15 @@
 package lambdasinaction.chap5;
 
+/**
+ * 5.5.1 交易
+ *
+ * @param null
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/17 16:15 
+ */
 public class Transaction{
 
 	private Trader trader;
@@ -25,6 +35,7 @@ public class Transaction{
 		return this.value;
 	}
 	
+	@Override
 	public String toString(){
 	    return "{" + this.trader + ", " +
 	           "year: "+this.year+", " +

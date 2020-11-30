@@ -1,6 +1,15 @@
 package lambdasinaction.chap8;
 
-
+/**
+ * 8.2.1 策略模式
+ *
+ * @param
+ * @return 
+ * @throw 
+ *
+ * @author wangyh2
+ * @since  2020/11/24 14:04 
+ */
 public class StrategyMain {
 
     public static void main(String[] args) {
@@ -23,11 +32,13 @@ public class StrategyMain {
     }
 
     static private class IsAllLowerCase implements ValidationStrategy {
+        @Override
         public boolean execute(String s){
             return s.matches("[a-z]+");
         }
     }
     static private class IsNumeric implements ValidationStrategy {
+        @Override
         public boolean execute(String s){
             return s.matches("\\d+");
         }
